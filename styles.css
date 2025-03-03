@@ -1,3 +1,30 @@
+#pageContainer {
+    display: flex;
+}
+
+#sidebarContainer {
+    height: 100vh;
+    width: 50vw;
+    background-image: url(./images/Flux_Dev_A_serene_and_deserted_beach_scene_at_dawn_or_dusk_wit_1.jpeg);
+}
+
+#sidebarContainer img {
+    max-height: 70px;
+}
+
+#textContainer {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    margin-top: 30%;
+}
+
+h1 {
+    color: white;
+    font-size: 4em;
+}
+
 .formLine {
     display: flex;
 }
