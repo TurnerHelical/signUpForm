@@ -21,7 +21,8 @@
         </div>
 
         <div id="mainContainer">
-            <p class="textContent, chicle-regular">This is a sign up form for something you sign up for. I need to fill more space so
+            <p class="textContent, chicle-regular">This is a sign up form for something you sign up for. I need to fill
+                more space so
                 I'm writing this. I ran out of things to say.</p>
             <p class="textContent, chicle-regular">Just kidding now this is really the end.</p>
             <form action="#">
@@ -31,44 +32,51 @@
                     <div class="formLine">
                         <div class="formInput">
                             <label for="firstName">FIRST NAME</label>
-                            <input type="text" id="firstName" name="firstName" placeholder="Bob">
+                            <input type="text" id="firstName" name="firstName" placeholder="Bob" required minlength="2"
+                                maxlength="25">
                         </div>
 
                         <div class="formInput">
                             <label for="lastName">LAST NAME</label>
-                            <input type="text" id="lastName" name="lastName" placeholder="Smith">
+                            <input type="text" id="lastName" name="lastName" placeholder="Smith" required minlength="2"
+                                maxlength="25">
                         </div>
                     </div>
 
                     <div class="formLine">
                         <div class="formInput">
                             <label for="userEmail">EMAIL</label>
-                            <input type="email" name="userEmail" id="userEmail" placeholder="bobsmith@example.com">
+                            <input type="email" name="userEmail" id="userEmail" placeholder="bobsmith@example.com"
+                                required>
                         </div>
 
                         <div class="formInput">
                             <label for="phoneNumber">PHONE NUMBER</label>
-                            <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="000-000-0000">
+                            <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="000-000-0000" required
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                         </div>
                     </div>
 
                     <div class="formLine">
                         <div class="formInput">
                             <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="password" placeholder="words">
+                            <input type="password" name="password" id="password" placeholder="words" required
+                                minlength="6" maxlength="25">
                         </div>
 
                         <div class="formInput">
                             <label for="confirmPassword">CONFIRM PASSWORD</label>
-                            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="words">
+                            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="words" required
+                            minlength="6" maxlength="25">
                         </div>
                     </div>
-
                 </div>
                 <button type="submit">Create Account</button>
             </form>
             <p id="logIn">Already have an account? <a href="#">Log in</a></p>
         </div>
+        </div>
+        
     </div>
 </body>
 
