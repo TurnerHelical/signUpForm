@@ -33,6 +33,12 @@ h1 {
     font-size: 4em;
 }
 
+#formContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 #mainContainer {
     display: flex;
     flex-direction: column;
@@ -77,6 +83,7 @@ form {
 
 .formInput input:focus {
     background-color: #93A6A0;
+    box-shadow: 2px 2px 3px gray;
 }
 
 form button {
